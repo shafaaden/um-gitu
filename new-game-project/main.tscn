@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cqow47bch5ocs"]
+
+[ext_resource type="PackedScene" uid="uid://ckavqb25bdaul" path="res://world.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://b5u4evf34bp6j" path="res://karakter.tscn" id="1_ig7tw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(62, 94)
+
+[node name="Main" type="Node2D" unique_id=412182846]
+
+[node name="world" parent="." unique_id=1062614639 instance=ExtResource("1_0xm2m")]
+
+[node name="Karakter" parent="world" unique_id=581420317 instance=ExtResource("1_ig7tw")]
+position = Vector2(334, 162)
+
+[node name="Area2D" type="Area2D" parent="world" unique_id=1992012343]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="world/Area2D" unique_id=968911473]
+position = Vector2(290, 63)
+shape = SubResource("RectangleShape2D_0xm2m")
