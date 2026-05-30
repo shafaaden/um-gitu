@@ -295,22 +295,18 @@ animations = [{
 "speed": 6.0
 }]
 
-[node name="Karakter" type="Node2D" unique_id=581420317]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=47874476]
 script = ExtResource("1_e7yfw")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=47874476]
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1174326903]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1174326903]
 show_behind_parent = true
 process_callback = 0
 position_smoothing_enabled = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2125091828]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2125091828]
 position = Vector2(0.5, 8)
 shape = SubResource("RectangleShape2D_e7yfw")
 
-[node name="Movement" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=954908076]
+[node name="Movement" type="AnimatedSprite2D" parent="." unique_id=954908076]
 sprite_frames = SubResource("SpriteFrames_pc0wf")
 animation = &"Standing Idle"
-frame = 1
-frame_progress = 0.47798452
